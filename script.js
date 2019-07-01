@@ -1,4 +1,4 @@
- /*
+ 
  
  var scores , activePlayer , roundScore , activeGame;
 // lets initiallise all the score and the roundscore
@@ -278,32 +278,5 @@ document.querySelector('.player-0-panel').classList.add('active');
 
   var retirementUe = retirement(65);
    retirementUe(1990);
-   */
+   
 
-
-   function interviewQuestion(job){
-     
-      var a = 'can you explain to me what UX design is ?';
-      var b = ' what subject do youy teach ';
-      var c = 'what do you do ?';
-
-       return  function(name){
-        if (job === 'designer'){ 
-            console.log(name + ' '+ a);
-        }else if(job === 'teacher') {
-           console.log(name + ' '+ b);
-
-        }else{
-            console.log('hello'+ ' '+ name+' ' + c);
-        }
-    }
-
-   }
-
-   var designerJob = interviewQuestion('designer');
-   var teacherJob = interviewQuestion('teacher');
-   var unknownJob = interviewQuestion('');
-
-   designerJob('john');
-   teacherJob('john');
-   unknownJob('john');
